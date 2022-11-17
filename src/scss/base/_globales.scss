@@ -1,0 +1,39 @@
+@use './mixins' as m;
+@use './variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+    color: v.$negro;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}

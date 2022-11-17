@@ -1,0 +1,15 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.container__products {
+  display: grid;
+  gap: 5rem;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@include m.tablet {
+  .container__products {
+    grid-template-columns: repeat(auto-fill, 230px);
+  }
+}

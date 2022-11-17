@@ -1,0 +1,29 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem ;
+
+    &__details{
+       padding-top: 3rem;
+
+       @include m.tablet { 
+        padding-left: 3rem ;
+       }
+    }
+    &__title{
+        font-size: 3rem;
+    }
+    &__description{
+        line-height: 3rem;
+        text-align: justify;
+    }
+}
+.col{
+    max-width: 400px;
+    margin: 1.5rem;
+    height: auto;
+    width: 80%;
+}
